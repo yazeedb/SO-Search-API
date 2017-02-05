@@ -1,0 +1,19 @@
+:host {
+	display: block;
+	padding: 10px 32px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #1C2B36;
+	color: white;
+	z-index: 1;
+}
+
+h2 {
+	display: inline;
+	font-weight: 300;
+}
+
+.title-overflow {
+	font-weight: bold;
+}

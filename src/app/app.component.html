@@ -1,0 +1,7 @@
+<app-modal *ngIf="modalService.isOpen"></app-modal>
+
+<app-navbar (searchEventReceived)="search($event)"></app-navbar>
+
+<div class="wrapper">
+	<app-results *ngFor="let q of questions" [question]="q"></app-results>
+</div>

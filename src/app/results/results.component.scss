@@ -1,0 +1,41 @@
+:host {
+	border-bottom: 1px solid #e4e6e8;
+	display: block;
+	padding: 10px 32px;
+
+	&.accepted {
+		background-color: #fffbec;
+	}
+}
+
+h3 {
+	margin: 20px 0;
+	cursor: pointer;
+}
+
+.stats {
+	margin: 16px 0;
+
+	span {
+		padding: 2px 4px;
+		display: inline-block;
+	}
+}
+	
+
+a {
+	display: inline-block;
+	color: #33658a;
+	background-color: #cee0ed;
+	margin: 4px 4px 4px 0;
+	padding: 4px;
+}
+
+.has-answers {
+	color: #45A163;
+}
+
+.accepted {
+	color: white;
+	background-color: #5fba7d;
+}

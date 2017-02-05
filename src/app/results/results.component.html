@@ -1,0 +1,20 @@
+<div class="header">
+	<h3 (click)="showAnswers()">{{ question.title }}</h3>
+</div>
+
+<div class="body">
+	<div class="stats">
+		<span class="score">{{ question.score }} votes</span>
+		<span class="answers" [ngClass]="{ 'has-answers': question.answer_count > 0, accepted: acceptedAnswer }">{{ question.answer_count }} answers</span>
+		<span class="views">{{ question.view_count }} views</span>
+	</div>
+
+	<div class="tags">
+		<a *ngFor="let t of question.tags">{{ t }}</a>
+	</div>
+
+	<div class="started">
+		<span *ngIf="isAnswered">answered {{ question.last_activity_date * 1000 | date: 'short' }}</span>
+		<span *ngIf="!isAnswered">asked {{ question.last_activity_date * 1000 | date: 'short' }}</span>
+	</div>
+</div>

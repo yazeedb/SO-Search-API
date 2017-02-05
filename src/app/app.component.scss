@@ -1,0 +1,11 @@
+.wrapper {
+	position: absolute;
+	width: 100%;
+	top: 45px;
+}
+
+@media (max-width: 500px) {
+	.wrapper {
+		top: 80px;
+	}
+}

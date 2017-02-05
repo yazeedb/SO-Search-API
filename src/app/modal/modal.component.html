@@ -1,0 +1,11 @@
+<div class="modal">
+	<span (click)="modalService.close()" class="icon-close">X</span>
+
+	<div class="heading" *ngIf="modalService.title">
+		<h2>{{ modalService.title }}</h2>
+	</div>
+
+	<div class="main">
+		<div class="answer" *ngFor="let b of modalService.bodies" [innerHTML]="b"></div>
+	</div>
+</div>
